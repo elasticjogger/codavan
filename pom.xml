@@ -11,6 +11,7 @@
 	<properties>
 		<jetty.plugin.version>9.0.0.M3</jetty.plugin.version>
 		<maven.resources.plugin.version>2.6</maven.resources.plugin.version>
+		<maven.compiler.plugin.version>3.0</maven.compiler.plugin.version>
 	</properties>
 
 	<build>
@@ -20,6 +21,16 @@
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>${maven.resources.plugin.version}</version>
 				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.compiler.plugin.version}</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>

@@ -12,7 +12,17 @@
     <jetty.plugin.version>9.0.0.M3</jetty.plugin.version>
     <maven.resources.plugin.version>2.6</maven.resources.plugin.version>
     <maven.compiler.plugin.version>3.0</maven.compiler.plugin.version>
+    <logback.version>1.0.9</logback.version>
   </properties>
+
+  <dependencies>
+    <dependency>
+      <!-- Brings dependencies: logback-core, slf4j-api -->
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback.version}</version>
+    </dependency>
+  </dependencies>
 
   <build>
     <plugins>

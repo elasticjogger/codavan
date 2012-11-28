@@ -7,7 +7,7 @@ public class App
 {
     static final Logger logger = LoggerFactory.getLogger(App.class);
 
-    public static void main(String[] args)
+    public App()
     {
         logger.info("JavaCode");
     }
